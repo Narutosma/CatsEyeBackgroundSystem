@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "outDir": "./dist",
+    "target": "ES2016",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "noEmitOnError": true
+  },
+  "include": ["./src"]
+}
