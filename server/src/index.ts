@@ -1,6 +1,10 @@
-const a:number = 10;
-console.log(10);
+import Express from 'express';
+import MovieRouter from './routers/MovieRouter';
+import UploadRouter from './routers/UploadRouter';
 
-const b:number = 20;
-const c:number = a + b;
-console.log(c);
+const app = Express();
+app.use('/upload', Express.static('public/upload'))
+app.use(Express.json());
+app.use('/api/movie', MovieRouter);
+app.use('/api/upload', UploadRouter);
+app.listen(3000);

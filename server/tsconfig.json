@@ -8,7 +8,11 @@
     "emitDecoratorMetadata": true,
     "strictNullChecks": true,
     "removeComments": true,
-    "noEmitOnError": true
+    "noEmitOnError": true,
+    "esModuleInterop": true,
+    "plugins": [
+      { "name": "typescript-tslint-plugin" }
+    ]
   },
   "include": ["./src"]
 }
